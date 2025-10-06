@@ -19,7 +19,7 @@ import uuid
 
 # Selecció del vostre PATH amb les imatges generades
 #
-ROOT_DIR  = r"generated_images"                      # Directori local
+ROOT_DIR  = r"../generated_images"                      # Directori local
 #ROOT_DIR = r"E:\_UAB\ED\IMAGE-CORPUS"              # Windows
 #ROOT_DIR = r"/opt/_uab/ed/image-corpus"             # Linux
 #ROOT_DIR = r"/Users/usuari/_uab/ed/image-corpus"    # MacOS
