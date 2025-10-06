@@ -17,7 +17,14 @@ L'objectiu principal és aplicar estructures de dades complexes per optimitzar l
 ├── project_guide.md             # Enunciat complet de la pràctica
 ├── src/                         # Codi d'exemple i templates
 │   ├── cfg.py                   # Configuració del projecte
-│   └── test-images.py           # Script de proves
+│   ├── test-images.py           # Script de proves amb metadades PNG
+│   ├── p1_main.py               # Template del main (opcional)
+│   ├── ImageFiles.py            # Template: Gestió de llistat d'imatges
+│   ├── ImageID.py               # Template: Generació d'identificadors UUID
+│   ├── ImageData.py             # Template: Gestió de metadades
+│   ├── ImageViewer.py           # Template: Visualització d'imatges
+│   ├── Gallery.py               # Template: Gestió de galeries JSON
+│   └── SearchMetadata.py        # Template: Cerca per metadades
 └── media/                       # Imatges i diagrames de la guia
 ``` 
 
