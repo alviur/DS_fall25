@@ -11,8 +11,6 @@ import sys
 import numpy    #  installed in anaconda by default
 import time
 from PIL import Image      # $ pip install pillow
-#                          Específic per llegir metadades d'imatges
-#                          Alternatiu: $ pip install exifread
 
 
 # STEP 1: Cerca de les imatges al filesystem
@@ -27,7 +25,7 @@ if not os.path.isfile(uri_file):
 # STEP 2: Obtenció de les metadades
 try:
     img = Image.open(uri_file)
-    metadata = img.text if hasattr(img, 'text') else {}
+    metadata = cfg.read_png_metadata(uri_file)
 except Exception as e:
     print(f"ERROR: No es pot llegir la imatge: {e}")
     sys.exit(1)
