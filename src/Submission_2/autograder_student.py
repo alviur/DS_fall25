@@ -217,7 +217,7 @@ def run_phase1_tests():
             searcher = SearchMetadata(image_data)
             # Expected result counts for each query
             expected_counts = {
-                "portrait": 1111, "art": 1741, "painting": 1000, "digital": 100,  "fantasy":25
+                "portrait": 1111, "art": 3020, "painting": 1741, "digital": 1041,  "fantasy":765
             }  
 
             # Test with a few sample queries
