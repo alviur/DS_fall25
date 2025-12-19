@@ -434,10 +434,12 @@ def main():
     phase1_results, phase1_time, phase1_validation = run_phase1_tests()
 
     # Run Phase 2
-    phase2_results, phase2_time, preprocess_time, tier1_time = run_phase2_tests()
+    phase2_results = run_phase2_tests(image_data_phase1, searcher_phase1, image_id_phase1)
+    phase2_tests, phase2_time, preprocess_time, tier1_time, tier2_time, num_queries_tier1, num_queries_tier2, tier1_precision, tier2_precision = phase2_results
 
     # Run Phase 3
-    phase3_results, tier3_time, tier3_quality = run_phase3_tests()
+    phase3_results = run_phase3_tests(image_data_phase1, image_id_phase1)
+    phase3_tests, tier3_time, num_successful_tier3, tier3_quality = phase3_results
 
     # Summary
     print("\n" + "="*70)
