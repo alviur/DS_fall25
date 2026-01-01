@@ -401,7 +401,7 @@ Per a implementar aquesta funcionalitat hi caldrà crear una classe anomenada `I
 - `ImageViewer.show_file(file: str)`
 - `ImageViewer.show_image(uuid: str, mode: int)`
 
-Cal tenir present que `ImageViewer.show_file()` utilitzarà la llibreria PIL/Pillow per mostrar la imatge (amb el mètode `Image.show()`), que obre la imatge en el visualitzador per defecte del sistema operatiu. El mètode `ImageViewer.show_image()` combinarà la impressió de metadades i la visualització segons el valor del paràmetre `mode` (0: només metadades, 1: metadades + imatge, 2: només imatge).
+El mètode `ImageViewer.show_image()` combinarà la impressió de metadades i la visualització segons el valor del paràmetre `mode` (0: només metadades, 1: metadades + imatge, 2: només imatge).
 
 ### 3.1.5. Func5 `/* visualitzar galeries JSON */`
 
